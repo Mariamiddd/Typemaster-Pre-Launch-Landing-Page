@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Barlow', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 24px 64px 24px;
+}
+.keyboard-mobile{
+    position: relative;
+    width: 100%;
+    left: -2%;
+    margin-left: 24px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.img-overlay{
+    position: relative;
+    left: -5%;
+    background-color: #f16718;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.phone-keyboard {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    opacity: 0.75;
+    mix-blend-mode: multiply;
+}
+
+.glass-mobile{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.pre-order-btn{
+    padding: 11px 14.5px 11px 13.5px;
+    border-radius: 8px;
+    border: none;
+    background-color: #E8EFF2;
+    font-size: 16px;
+    font-weight: 700;
+    color: #162542;
+}
+.pre-order-btn:hover{
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: #162542;
+    color: #FFFFFF;
+}
+.container{
+    padding: 0 24px 0 24px;
+}
+
+.typemaster-keyboard{
+    width: 15ch;
+    font-size: 42px;
+    font-weight: 900;
+    color: #162542;
+
+}
+.product-description{
+    max-width: 43ch;
+    padding: 32px 0 32px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px; 
+    color: #7B8BAD;
+}
+.btn-and-date{
+    display: flex;
+    align-items: center;
+    padding-bottom: 60px;
+    gap: 32px;
+}
+.pre-order-btn-n2{
+    padding: 11px 14px 11px 14px;
+    border-radius: 8px;
+    border: none;
+    background: #F16718;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.pre-order-btn-n2:hover{
+    cursor: pointer;
+    transition: 0.4s;
+    background: #FF9B62;
+}
+.release-date{
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 700;
+    color: #7B8BAD;
+}
+.desktop, .tablet, .square, .squareN2{
+    display: none;
+}
+.sidebyside-imgs{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 20px 0 0;
+}
+.typemaster-details{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 65px auto 24px auto;
+}
+.wireless-product-name{
+    display: flex;
+    margin: 0 auto;
+    width: 18ch;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 36px;
+    color: #162542;
+} 
+.wireless-product-features{
+    width: 36ch;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #7B8BAD;
+    margin: 0 auto 40px auto;
+}
+.icons-with-description{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.icon-compatible, .icon-bluetooth, .icon-battery, .icon-light{
+    display: flex;
+    margin: 0 auto 48px auto;
+    width: 65px;
+    background-color: #F16718;
+    border-radius: 16px;
+}
+.icon-compatible{
+    padding: 22.45px 19.86px 22.31px 20px;
+}
+.icon-bluetooth{
+    padding: 19px 23.6px 18.14px 23.72px;
+}
+.icon-battery{
+    padding: 23.33px 17.01px 21.67px 16px;
+}
+.icon-light{
+    padding: 16px 17px 17px 16px
+}
+.compatible-box, .bluetooth-box, .battery-box, .light-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    margin-top: 64px;
+}
+
+.description-h1{
+    width: 17ch;
+    margin: 0 auto;
+    padding-bottom: 24px;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28px;
+    color: #162542;
+}
+.description-p{
+    width: 37ch;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #7B8BAD;
+}
+footer{
+    margin: 96px auto 50px auto;
+    text-align: center;
+    color: #7B8BAD;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+.footer-part1{
+    font-weight: 700;
+}
+
+
+
+@media only screen and (min-width: 550px) {
+    header{
+        padding: 40px 40px 40px 39px;
+    }
+    .pre-order-btn{
+        padding: 16px 27px 16px 26px;
+    }
+    .pre-order-btn-n2{
+        padding: 16px 27px 16px 26px;
+    }
+    .logo{
+        width: 51px;
+        height: 51px;
+    }
+
+    .desktop, .mobile, .square, .squareN2{
+        display: none;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .container{
+        padding: 50px 0 70px 39px;
+    }
+    .keyboard-tablet{
+        display: flex;
+        position: relative;
+        left: -5%;
+        height: 425px;
+        width: 478px;
+        border-radius: 20px;
+    }
+    .img-overlay{
+        position: static;
+        border-radius: 20px;
+    }
+    .sidebyside-imgs{
+        margin: 30px 40px 0 39px;
+        gap: 30.05px;
+    }
+    .tablet-phoneandkeyboard{
+        display: flex;
+        width: 100%;
+        border-radius: 20px;
+        opacity: 0.75;
+        mix-blend-mode: multiply;
+    }
+    .tablet-glassandkeyboard{
+        display: flex;
+        width: 100%;
+        border-radius: 20px;
+    }
+    .typemaster-details{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        align-items: baseline;
+        margin: 87px 40px 0 39px;
+    }
+    .wireless-product-features{
+        width: 58ch;
+    }
+    .compatible-box, .bluetooth-box, .battery-box, .light-box {
+        text-align: left;
+    }
+    .icons-with-description{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 39px;
+        column-gap: 69px;
+    }
+    .description-h1{
+        margin: 0;
+    }
+    .icon{
+        margin: 0 0 40px 0;
+    }
+    .description-p{
+        width: 33ch;
+        margin: 0;
+    }
+
+}
+@media only screen and (min-width: 1200px) {
+    header{
+        padding: 64px 165px 0 165px;
+    }
+    .mobile, .tablet{
+        display: none;
+    }
+    .keyboard-desktop{
+        display: flex;
+        width: 60%;
+        border-radius: 20px;
+    }
+    .square{
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: -8%;
+    }
+    .squareN2{
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: -8%;
+        height: 236px;
+        width: 255px;
+        z-index: 1;
+    }
+    .img-overlay{
+        display: flex;
+    }
+    .desktop-keyboard{
+        display: flex;
+        width: 100%;
+        border-radius: 20px;
+        opacity: 0.75;
+        mix-blend-mode: multiply;
+    }
+    .glass-desktop{
+        display: flex;
+        width: 100%;
+        border-radius: 20px;
+    }
+    .sidebyside-imgs{
+        margin-left: 165px;
+    }
+    .container{
+        padding: 30px 0 130px 165px;
+    }
+    .wrapper{
+        position: relative;
+        margin-top: 83px;
+        gap: 125px;
+    }
+    .typemaster-details{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        gap: 27px;
+        margin-left: 125px;
+    }
+    .wireless-product-features{
+        margin: 0;
+        text-align: left;
+        width: 30ch;
+    }
+    .description-p{
+        width: 29ch;
+    }
+    .container-second{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    .icons-with-description{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin: 100px 0 50px 165px;
+    }
+
+}
