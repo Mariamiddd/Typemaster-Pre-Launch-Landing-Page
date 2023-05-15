@@ -67,7 +67,7 @@ header{
 }
 
 .typemaster-keyboard{
-    width: 15ch;
+    max-width: 15ch;
     font-size: 42px;
     font-weight: 900;
     color: #162542;
@@ -124,7 +124,7 @@ header{
 .wireless-product-name{
     display: flex;
     margin: 0 auto;
-    width: 18ch;
+    max-width: 18ch;
     text-transform: uppercase;
     font-size: 32px;
     font-weight: 900;
@@ -132,7 +132,7 @@ header{
     color: #162542;
 } 
 .wireless-product-features{
-    width: 36ch;
+    max-width: 36ch;
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
@@ -172,7 +172,7 @@ header{
 }
 
 .description-h1{
-    width: 17ch;
+    max-width: 17ch;
     margin: 0 auto;
     padding-bottom: 24px;
     font-size: 24px;
@@ -181,7 +181,7 @@ header{
     color: #162542;
 }
 .description-p{
-    width: 37ch;
+    max-width: 37ch;
     margin: 0 auto;
     font-size: 16px;
     font-weight: 500;
@@ -224,16 +224,14 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-    .container{
         padding: 50px 0 70px 39px;
     }
+
     .keyboard-tablet{
         display: flex;
         position: relative;
-        left: -5%;
-        height: 425px;
-        width: 478px;
+        width: 100%;
+        right: -10%;
         border-radius: 20px;
     }
     .img-overlay{
@@ -264,7 +262,7 @@ footer{
         margin: 87px 40px 0 39px;
     }
     .wireless-product-features{
-        width: 58ch;
+        max-width: 45ch;
     }
     .compatible-box, .bluetooth-box, .battery-box, .light-box {
         text-align: left;
@@ -273,7 +271,6 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-left: 39px;
-        column-gap: 69px;
     }
     .description-h1{
         margin: 0;
@@ -282,7 +279,7 @@ footer{
         margin: 0 0 40px 0;
     }
     .description-p{
-        width: 33ch;
+        max-width: 33ch;
         margin: 0;
     }
 
@@ -296,14 +293,18 @@ footer{
     }
     .keyboard-desktop{
         display: flex;
-        width: 60%;
+        position: relative;
+        width: 80%;
+        left: 20%;
         border-radius: 20px;
     }
     .square{
         display: flex;
         position: absolute;
-        top: 0;
-        right: -8%;
+        height: 240px;
+        width: 255px;
+        bottom: 43.5%;
+        right: -9%;
     }
     .squareN2{
         display: flex;
@@ -332,13 +333,13 @@ footer{
     .sidebyside-imgs{
         margin-left: 165px;
     }
-    .container{
-        padding: 30px 0 130px 165px;
-    }
     .wrapper{
-        position: relative;
-        margin-top: 83px;
-        gap: 125px;
+        display: flex;
+        flex-direction: row;
+        padding: 62px 165px 30px 165px;
+    }
+    .container{
+        padding: 70px 0 0 0;
     }
     .typemaster-details{
         display: flex;
@@ -350,21 +351,23 @@ footer{
     .wireless-product-features{
         margin: 0;
         text-align: left;
-        width: 30ch;
+        max-width: 30ch;
     }
     .description-p{
-        width: 29ch;
+        max-width: 29ch;
     }
     .container-second{
         display: flex;
         flex-direction: row;
         position: relative;
+        margin-right: 165px;
     }
     .icons-with-description{
         display: flex;
         flex-direction: row;
-        gap: 30px;
-        margin: 100px 0 50px 165px;
+        justify-content: space-evenly;
+        gap: 60px;
+        margin: 100px 165px 50px 165px;
     }
 
 }
